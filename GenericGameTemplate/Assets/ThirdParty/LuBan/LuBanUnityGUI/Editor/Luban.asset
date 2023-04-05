@@ -14,11 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   before_gen: 
   after_gen: 
-  which_dll: Tools/Luban.ClientServer/Luban.ClientServer.dll
-  tpl_path: Tools/Defines
+  which_dll: DataTableFiles/Luban.ClientServer/Luban.ClientServer.dll
+  tpl_path: DataTableFiles/Defines
   job: cfg --
-  define_xml: Tools/Defines/__root__.xml
-  input_data_dir: Tools/Datas
+  define_xml: DataTableFiles/Defines/__root__.xml
+  input_data_dir: DataTableFiles/DataTableFiles
   gen_types: 257
   service: all
   output_data_dir: Assets/ThirdParty/LuBan/Gen/DataTableAsset
