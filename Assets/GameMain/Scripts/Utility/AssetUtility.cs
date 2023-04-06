@@ -11,9 +11,14 @@ namespace GenericGameTemplate
 
         public static string GetDataTableAsset(string assetName, bool fromBytes = true)
         {
-            return Utility.Text.Format("Assets/GameMain/DataTables/{0}.{1}", assetName, fromBytes ? "bytes" : "txt");
+            return Utility.Text.Format("Assets/GameMain/Gen/DataTableAsset/{0}.{1}", assetName, fromBytes ? "bytes" : "txt");
         }
 
+        public static string GetDataTableLuBanAsset(string assetName, bool fromBytes = true)
+        {
+            return Utility.Text.Format("Assets/GameMain/Gen/DataTableLuBanAsset/{0}.{1}", assetName, fromBytes ? "bytes" : "txt");
+        }
+        
         public static string GetDictionaryAsset(string assetName, bool fromBytes)
         {
             return Utility.Text.Format("Assets/GameMain/Localization/{0}/Dictionaries/{1}.{2}", GameEntry.Localization.Language, assetName, fromBytes ? "bytes" : "xml");

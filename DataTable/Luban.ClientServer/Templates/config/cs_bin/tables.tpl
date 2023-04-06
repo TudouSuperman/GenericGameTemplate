@@ -29,7 +29,7 @@ public partial class {{name}}
 
         {{~for table in tables ~}}
         {{table.name}} = component.CreateDataTable<{{table.full_name}}>();
-        var {{table.output_data_file}}_readPath = AssetUtility.GetDataTableAsset("{{table.output_data_file}}");
+        var {{table.output_data_file}}_readPath = AssetUtility.GetDataTableLuBanAsset("{{table.output_data_file}}");
         {{table.name}}.ReadData({{table.output_data_file}}_readPath);
         allLoadingTables.Add({{table.output_data_file}}_readPath);
         tables.Add("{{table.full_name}}", {{table.name}});

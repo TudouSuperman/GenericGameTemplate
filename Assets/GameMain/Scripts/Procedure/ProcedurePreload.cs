@@ -107,7 +107,7 @@ namespace GenericGameTemplate
 
         private void LoadDataTable(string dataTableName)
         {
-            string dataTableAssetName = AssetUtility.GetDataTableAsset(dataTableName, false);
+            string dataTableAssetName = AssetUtility.GetDataTableAsset(dataTableName);
             m_LoadedFlag.Add(dataTableAssetName, false);
             GameEntry.DataTable.LoadDataTable(dataTableName, dataTableAssetName, this);
         }
