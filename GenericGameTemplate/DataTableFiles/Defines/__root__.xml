@@ -1,6 +1,6 @@
 <root>
 
-	<topmodule name="ToolsLibrary.ThirdParty.LuBan.Gen"/>
+	<topmodule name="GenericGameTemplate.DataTables"/>
 
 	<patch name="cn"/>
 	<patch name="en"/>

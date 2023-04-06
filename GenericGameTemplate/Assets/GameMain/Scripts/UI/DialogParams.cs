@@ -1,13 +1,6 @@
-﻿//------------------------------------------------------------
-// Game Framework
-// Copyright © 2013-2021 Jiang Yin. All rights reserved.
-// Homepage: https://gameframework.cn/
-// Feedback: mailto:ellan@gameframework.cn
-//------------------------------------------------------------
+﻿using GameFramework;
 
-using GameFramework;
-
-namespace StarForce
+namespace GenericGameTemplate
 {
     /// <summary>
     /// 对话框显示数据。

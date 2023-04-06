@@ -1,20 +1,13 @@
-﻿//------------------------------------------------------------
-// Game Framework
-// Copyright © 2013-2021 Jiang Yin. All rights reserved.
-// Homepage: https://gameframework.cn/
-// Feedback: mailto:ellan@gameframework.cn
-//------------------------------------------------------------
-
-using GameFramework.DataTable;
+﻿using GameFramework.DataTable;
 using System;
 using UnityEngine;
 using UnityGameFramework.Runtime;
 
-namespace StarForce
+namespace GenericGameTemplate
 {
     public static class DataTableExtension
     {
-        private const string DataRowClassPrefixName = "StarForce.DR";
+        private const string DataRowClassPrefixName = "GenericGameTemplate.DR";
         internal static readonly char[] DataSplitSeparators = new char[] { '\t' };
         internal static readonly char[] DataTrimSeparators = new char[] { '\"' };
 

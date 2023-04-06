@@ -1,17 +1,10 @@
-﻿//------------------------------------------------------------
-// Game Framework
-// Copyright © 2013-2021 Jiang Yin. All rights reserved.
-// Homepage: https://gameframework.cn/
-// Feedback: mailto:ellan@gameframework.cn
-//------------------------------------------------------------
-
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Runtime.InteropServices;
 using UnityEngine;
 using UnityGameFramework.Runtime;
 
-namespace StarForce
+namespace GenericGameTemplate
 {
     /// <summary>
     /// AI 工具类。

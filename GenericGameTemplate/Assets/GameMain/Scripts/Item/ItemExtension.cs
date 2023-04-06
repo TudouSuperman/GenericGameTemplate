@@ -2,7 +2,7 @@ using System;
 using GameFramework.DataTable;
 using UnityGameFramework.Runtime;
 
-namespace StarForce
+namespace GenericGameTemplate
 {
     public static class ItemExtension
     {

@@ -1,11 +1,4 @@
-﻿//------------------------------------------------------------
-// Game Framework
-// Copyright © 2013-2021 Jiang Yin. All rights reserved.
-// Homepage: https://gameframework.cn/
-// Feedback: mailto:ellan@gameframework.cn
-//------------------------------------------------------------
-
-using GameFramework;
+﻿using GameFramework;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -13,7 +6,7 @@ using System.Linq;
 using System.Text;
 using UnityEngine;
 
-namespace StarForce.Editor.DataTableTools
+namespace GenericGameTemplate.Editor.DataTableTools
 {
     public sealed partial class DataTableProcessor
     {

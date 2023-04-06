@@ -1,6 +1,6 @@
 using UnityGameFramework.Runtime;
 
-namespace StarForce
+namespace GenericGameTemplate
 {
     public abstract class Item : ItemLogic
     {

@@ -1,16 +1,9 @@
-﻿//------------------------------------------------------------
-// Game Framework
-// Copyright © 2013-2021 Jiang Yin. All rights reserved.
-// Homepage: https://gameframework.cn/
-// Feedback: mailto:ellan@gameframework.cn
-//------------------------------------------------------------
-
-using GameFramework.DataTable;
+﻿using GameFramework.DataTable;
 using GameFramework.Event;
 using UnityGameFramework.Runtime;
 using ProcedureOwner = GameFramework.Fsm.IFsm<GameFramework.Procedure.IProcedureManager>;
 
-namespace StarForce
+namespace GenericGameTemplate
 {
     public class ProcedureChangeScene : ProcedureBase
     {

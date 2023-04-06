@@ -1,4 +1,4 @@
-namespace StarForce
+namespace GenericGameTemplate
 {
     /// <summary>
     /// 物品编号。

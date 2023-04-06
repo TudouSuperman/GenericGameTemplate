@@ -1,11 +1,4 @@
-﻿//------------------------------------------------------------
-// Game Framework
-// Copyright © 2013-2021 Jiang Yin. All rights reserved.
-// Homepage: https://gameframework.cn/
-// Feedback: mailto:ellan@gameframework.cn
-//------------------------------------------------------------
-
-using GameFramework;
+﻿using GameFramework;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -13,7 +6,7 @@ using System.Text;
 using System.Text.RegularExpressions;
 using UnityEngine;
 
-namespace StarForce.Editor.DataTableTools
+namespace GenericGameTemplate.Editor.DataTableTools
 {
     public sealed class DataTableGenerator
     {
@@ -74,7 +67,7 @@ namespace StarForce.Editor.DataTableTools
             string dataTableName = (string)userData;
 
             codeContent.Replace("__DATA_TABLE_CREATE_TIME__", DateTime.UtcNow.ToLocalTime().ToString("yyyy-MM-dd HH:mm:ss.fff"));
-            codeContent.Replace("__DATA_TABLE_NAME_SPACE__", "StarForce");
+            codeContent.Replace("__DATA_TABLE_NAME_SPACE__", "GenericGameTemplate");
             codeContent.Replace("__DATA_TABLE_CLASS_NAME__", "DR" + dataTableName);
             codeContent.Replace("__DATA_TABLE_COMMENT__", dataTableProcessor.GetValue(0, 1) + "。");
             codeContent.Replace("__DATA_TABLE_ID_COMMENT__", "获取" + dataTableProcessor.GetComment(dataTableProcessor.IdColumn) + "。");
