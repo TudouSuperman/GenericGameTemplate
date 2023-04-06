@@ -10,8 +10,9 @@ namespace GenericGameTemplate.Editor.DataTableTools
 {
     public sealed class DataTableGenerator
     {
-        private const string DataTablePath = "Assets/GameMain/DataTables";
-        private const string CSharpCodePath = "Assets/GameMain/Scripts/DataTable";
+        private const string DataTablePath = "DataTable/DataTableFiles";
+        private const string DataTableBinaryPath = "Assets/GameMain/Gen/DataTableAsset";
+        private const string CSharpCodePath = "Assets/GameMain/Gen/DataTableClass";
         private const string CSharpCodeTemplateFileName = "Assets/GameMain/Configs/DataTableCodeTemplate.txt";
         private static readonly Regex EndWithNumberRegex = new Regex(@"\d+$");
         private static readonly Regex NameRegex = new Regex(@"^[A-Z][A-Za-z0-9_]*$");
@@ -43,7 +44,7 @@ namespace GenericGameTemplate.Editor.DataTableTools
 
         public static void GenerateDataFile(DataTableProcessor dataTableProcessor, string dataTableName)
         {
-            string binaryDataFileName = Utility.Path.GetRegularPath(Path.Combine(DataTablePath, dataTableName + ".bytes"));
+            string binaryDataFileName = Utility.Path.GetRegularPath(Path.Combine(DataTableBinaryPath, dataTableName + ".bytes"));
             if (!dataTableProcessor.GenerateDataFile(binaryDataFileName) && File.Exists(binaryDataFileName))
             {
                 File.Delete(binaryDataFileName);

@@ -9,7 +9,7 @@ namespace GenericGameTemplate
             return Utility.Text.Format("Assets/GameMain/Configs/{0}.{1}", assetName, fromBytes ? "bytes" : "txt");
         }
 
-        public static string GetDataTableAsset(string assetName, bool fromBytes)
+        public static string GetDataTableAsset(string assetName, bool fromBytes = true)
         {
             return Utility.Text.Format("Assets/GameMain/DataTables/{0}.{1}", assetName, fromBytes ? "bytes" : "txt");
         }

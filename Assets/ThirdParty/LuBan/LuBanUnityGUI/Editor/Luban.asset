@@ -14,15 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   before_gen: 
   after_gen: 
-  which_dll: DataTableFiles/Luban.ClientServer/Luban.ClientServer.dll
-  tpl_path: DataTableFiles/Defines
+  which_dll: DataTable/Luban.ClientServer/Luban.ClientServer.dll
+  tpl_path: DataTable/Defines
   job: cfg --
-  define_xml: DataTableFiles/Defines/__root__.xml
-  input_data_dir: DataTableFiles/DataTableFiles
+  define_xml: DataTable/Defines/__root__.xml
+  input_data_dir: DataTable/DataTableLuBanFiles
   gen_types: 257
   service: all
-  output_data_dir: Assets/ThirdParty/LuBan/Gen/DataTableAsset
-  output_code_dir: Assets/ThirdParty/LuBan/Gen/DataTableClass
+  output_data_dir: Assets/GameMain/Gen/DataTableLuBanAsset
+  output_code_dir: Assets/GameMain/Gen/DataTableLuBanClass
   output_data_resources_list_file: 
   output_exclude_tags: 
   output_data_file_extension: 

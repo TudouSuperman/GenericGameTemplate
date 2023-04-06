@@ -14,7 +14,7 @@ namespace GameFramework
     /// 数据提供者。
     /// </summary>
     /// <typeparam name="T">数据提供者的持有者的类型。</typeparam>
-    internal sealed class DataProvider<T> : IDataProvider<T>
+    public sealed class DataProvider<T> : IDataProvider<T>
     {
         private const int BlockSize = 1024 * 4;
         private static byte[] s_CachedBytes = null;
@@ -375,7 +375,7 @@ namespace GameFramework
         /// 设置资源管理器。
         /// </summary>
         /// <param name="resourceManager">资源管理器。</param>
-        internal void SetResourceManager(IResourceManager resourceManager)
+        public void SetResourceManager(IResourceManager resourceManager)
         {
             if (resourceManager == null)
             {
@@ -389,7 +389,7 @@ namespace GameFramework
         /// 设置数据提供者辅助器。
         /// </summary>
         /// <param name="dataProviderHelper">数据提供者辅助器。</param>
-        internal void SetDataProviderHelper(IDataProviderHelper<T> dataProviderHelper)
+        public void SetDataProviderHelper(IDataProviderHelper<T> dataProviderHelper)
         {
             if (dataProviderHelper == null)
             {
