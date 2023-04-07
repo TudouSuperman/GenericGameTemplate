@@ -347,7 +347,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_EnableLoadDataTableUpdateEvent: 0
   m_EnableLoadDataTableDependencyAssetEvent: 0
-  m_DataTableHelperTypeName: GenericGameTemplate.Runtime.DefaultTableHelper
+  m_DataTableHelperTypeName: GenericGameTemplate.DefaultTableHelper
   m_CustomDataTableHelper: {fileID: 0}
   m_CachedBytesSize: 0
 --- !u!1001 &343730742
