@@ -12,21 +12,16 @@ using GenericGameTemplate;
 namespace GenericGameTemplate.DataTables.Item
 {
    
-public partial class TbItem : TableBase
+public partial class TbItem
 {
     private readonly Dictionary<int, Item.TbItemInfo> _dataMap;
     private readonly List<Item.TbItemInfo> _dataList;
     
-    public TbItem(): base("TbItem")
+    public TbItem(ByteBuf _buf)
     {
-       _dataMap = new Dictionary<int, Item.TbItemInfo>();
-       _dataList = new List<Item.TbItemInfo>();
-
-    }
-
-    public override void LoadByteBuf(byte[] bytes){
-  
-        var _buf = new ByteBuf(bytes);
+        _dataMap = new Dictionary<int, Item.TbItemInfo>();
+        _dataList = new List<Item.TbItemInfo>();
+        
         for(int n = _buf.ReadSize() ; n > 0 ; --n)
         {
             Item.TbItemInfo _v;
@@ -64,5 +59,4 @@ public partial class TbItem : TableBase
     partial void PostInit();
     partial void PostResolve();
 }
-
 }

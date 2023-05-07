@@ -8,42 +8,32 @@
 using Bright.Serialization;
 
 
+
 namespace GenericGameTemplate.DataTables
 {
    
 public partial class Tables
 {
+    public Item.TbItem TbItem {get; }
 
-    private System.Collections.Generic.Dictionary<string, object> tables;
-
-    public Item.TbItem TbItem {get; private set; }
-
-    
-
-    public void LoadAllDataTable(GenericGameTemplate.TableComponent component,ref System.Collections.Generic.List<string> allLoadingTables){
-        tables = new System.Collections.Generic.Dictionary<string, object>();
-
-        TbItem = component.CreateDataTable<Item.TbItem>();
-        var item_tbitem_readPath = AssetUtility.GetDataTableLuBanAsset("item_tbitem");
-        TbItem.ReadData(item_tbitem_readPath);
-        allLoadingTables.Add(item_tbitem_readPath);
+    public Tables(System.Func<string, ByteBuf> loader)
+    {
+        var tables = new System.Collections.Generic.Dictionary<string, object>();
+        TbItem = new Item.TbItem(loader("item_tbitem")); 
         tables.Add("Item.TbItem", TbItem);
 
-    }
-
-    public void ResolveAll(){
-
+        PostInit();
         TbItem.Resolve(tables); 
-
-        tables.Clear();
+        PostResolve();
     }
-
-
 
     public void TranslateText(System.Func<string, string, string> translator)
     {
         TbItem.TranslateText(translator); 
     }
+    
+    partial void PostInit();
+    partial void PostResolve();
 }
 
 }

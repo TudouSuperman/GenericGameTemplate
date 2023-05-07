@@ -16,17 +16,22 @@ namespace {{x.namespace_with_top_module}}
 /// {{x.escape_comment}}
 /// </summary>
 {{~end~}}
-public partial class {{name}}
+public partial class {{name}} : TableBase
 {
     {{~if x.is_map_table ~}}
     private readonly Dictionary<{{cs_define_type key_type}}, {{cs_define_type value_type}}> _dataMap;
     private readonly List<{{cs_define_type value_type}}> _dataList;
     
-    public {{name}}(ByteBuf _buf)
+    public {{name}}(): base("{{name}}")
     {
-        _dataMap = new Dictionary<{{cs_define_type key_type}}, {{cs_define_type value_type}}>();
-        _dataList = new List<{{cs_define_type value_type}}>();
-        
+       _dataMap = new Dictionary<{{cs_define_type key_type}}, {{cs_define_type value_type}}>();
+       _dataList = new List<{{cs_define_type value_type}}>();
+
+    }
+
+    public override void LoadByteBuf(byte[] bytes){
+  
+        var _buf = new ByteBuf(bytes);
         for(int n = _buf.ReadSize() ; n > 0 ; --n)
         {
             {{cs_define_type value_type}} _v;
@@ -75,11 +80,17 @@ public partial class {{name}}
     {{~end~}}
     {{~end~}}
 
-    public {{name}}(ByteBuf _buf)
+    public {{name}}(): base("{{name}}")
     {
         _dataList = new List<{{cs_define_type value_type}}>();
         
-        for(int n = _buf.ReadSize() ; n > 0 ; --n)
+    }
+
+   public override void LoadByteBuf(byte[] bytes){
+  
+        var _buf = new ByteBuf(bytes);
+  
+         for(int n = _buf.ReadSize() ; n > 0 ; --n)
         {
             {{cs_define_type value_type}} _v;
             {{cs_deserialize '_buf' '_v' value_type}}
@@ -134,15 +145,22 @@ public partial class {{name}}
     }
     {{~else~}}
 
-     private readonly {{cs_define_type value_type}} _data;
+     private {{cs_define_type value_type}} _data;
 
-    public {{name}}(ByteBuf _buf)
+    public {{name}}(): base("{{name}}")
     {
+        
+    }
+
+    public override void LoadByteBuf(byte[] bytes){
+  
+        var _buf = new ByteBuf(bytes);
+
         int n = _buf.ReadSize();
         if (n != 1) throw new SerializationException("table mode=one, but size != 1");
         {{cs_deserialize '_buf' '_data' value_type}}
         PostInit();
-    }
+     }
 
 
     {{~ for field in value_type.bean.hierarchy_export_fields ~}}
@@ -170,4 +188,5 @@ public partial class {{name}}
     partial void PostInit();
     partial void PostResolve();
 }
+
 }
