@@ -229,7 +229,6 @@ Transform:
   - {fileID: 513208573}
   - {fileID: 1604812193}
   - {fileID: 858897306}
-  - {fileID: 183691813}
   m_Father: {fileID: 1852670053}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -301,55 +300,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &183691812
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 183691813}
-  - component: {fileID: 183691814}
-  m_Layer: 0
-  m_Name: DataTableLuBan
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &183691813
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 183691812}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 119167776}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &183691814
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 183691812}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8e5cc28c8932cdf46ac84fc9fc360de4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_EnableLoadDataTableUpdateEvent: 0
-  m_EnableLoadDataTableDependencyAssetEvent: 0
-  m_DataTableHelperTypeName: GenericGameTemplate.DefaultTableHelper
-  m_CustomDataTableHelper: {fileID: 0}
-  m_CachedBytesSize: 0
 --- !u!1001 &343730742
 PrefabInstance:
   m_ObjectHideFlags: 0
