@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b23f08d2ae4cba14087c1ed36193d82b, type: 3}
+  m_Name: ParallelSelector-1
+  m_EditorClassIdentifier: 
+  mBehaviorSource:
+    behaviorName: Behavior
+    behaviorDescription: 
+    mTaskData:
+      types: []
+      parentIndex: 
+      startIndex: 
+      variableStartIndex: 
+      JSONSerialization: '{"EntryTask":{"Type":"BehaviorDesigner.Runtime.Tasks.EntryTask","NodeData":{"Offset":"(-52.6635132,81.17828)"},"ID":0,"Name":"Entry","Instant":true},"RootTask":{"Type":"BehaviorDesigner.Runtime.Tasks.ParallelSelector","NodeData":{"Offset":"(-2.66351318,121.178276)"},"ID":1,"Name":"Parallel
+        Selector","Instant":true,"AbortTypeabortType":"None","Children":[{"Type":"BehaviorDesigner.Runtime.Tasks.ReturnFailure","NodeData":{"Offset":"(-285.454559,138.636353)"},"ID":2,"Name":"Return
+        Failure","Instant":true,"Children":[{"Type":"BehaviorDesigner.Runtime.Tasks.Log","NodeData":{"Offset":"(0,120)","Comment":"\u5e76\u884c\u9009\u62e9\u8282\u70b9\uff0c\u5e76\u884c\u6267\u884c\uff0c\u4e00\u771f\u5373\u771f\uff0c\u4e00\u771f\u5373\u505c\uff0c\u5168\u5047\u624d\u5047\u3002"},"ID":3,"Name":"Log","Instant":true,"SharedStringtext":{"Type":"BehaviorDesigner.Runtime.SharedString","Name":null,"StringmValue":"\u5e76\u884c\u9009\u62e9\u8282\u70b9\uff0c\u5e76\u884c\u6267\u884c\uff0c\u4e00\u771f\u5373\u771f\uff0c\u4e00\u771f\u5373\u505c\uff0c\u5168\u5047\u624d\u5047\u3002"},"SharedBoollogError":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":null,"BooleanmValue":false},"SharedBoollogTime":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":null,"BooleanmValue":false}}]},{"Type":"BehaviorDesigner.Runtime.Tasks.ReturnFailure","NodeData":{"Offset":"(-0.8930702,135.173386)"},"ID":4,"Name":"Return
+        Failure","Instant":true,"Children":[{"Type":"BehaviorDesigner.Runtime.Tasks.Log","NodeData":{"Offset":"(-1.90734863E-06,120)","Comment":"\u5e76\u884c\u9009\u62e9\u8282\u70b9\uff0c\u5e76\u884c\u6267\u884c\uff0c\u4e00\u771f\u5373\u771f\uff0c\u4e00\u771f\u5373\u505c\uff0c\u5168\u5047\u624d\u5047\u3002"},"ID":5,"Name":"Log","Instant":true,"SharedStringtext":{"Type":"BehaviorDesigner.Runtime.SharedString","Name":null,"StringmValue":"\u5e76\u884c\u9009\u62e9\u8282\u70b9\uff0c\u5e76\u884c\u6267\u884c\uff0c\u4e00\u771f\u5373\u771f\uff0c\u4e00\u771f\u5373\u505c\uff0c\u5168\u5047\u624d\u5047\u3002"},"SharedBoollogError":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":null,"BooleanmValue":false},"SharedBoollogTime":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":null,"BooleanmValue":false}}]},{"Type":"BehaviorDesigner.Runtime.Tasks.ReturnFailure","NodeData":{"Offset":"(294.090851,150)"},"ID":6,"Name":"Return
+        Failure","Instant":true,"Children":[{"Type":"BehaviorDesigner.Runtime.Tasks.Log","NodeData":{"Offset":"(0,110)","Comment":"\u5e76\u884c\u9009\u62e9\u8282\u70b9\uff0c\u5e76\u884c\u6267\u884c\uff0c\u4e00\u771f\u5373\u771f\uff0c\u4e00\u771f\u5373\u505c\uff0c\u5168\u5047\u624d\u5047\u3002"},"ID":7,"Name":"Log","Instant":true,"SharedStringtext":{"Type":"BehaviorDesigner.Runtime.SharedString","Name":null,"StringmValue":"\u5e76\u884c\u9009\u62e9\u8282\u70b9\uff0c\u5e76\u884c\u6267\u884c\uff0c\u4e00\u771f\u5373\u771f\uff0c\u4e00\u771f\u5373\u505c\uff0c\u5168\u5047\u624d\u5047\u3002"},"SharedBoollogError":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":null,"BooleanmValue":false},"SharedBoollogTime":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":null,"BooleanmValue":false}}]}]}}'
+      fieldSerializationData:
+        typeName: []
+        fieldNameHash: 
+        startIndex: 
+        dataPosition: 
+        unityObjects: []
+        byteData: 
+        byteDataArray: 
+      Version: 1.7.4
